@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="is.siggigauti.tms_app.StoreInfoActivity">
+
+    <EditText
+        android:id="@+id/searchByEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Leita eftir kennitölu"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leita"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="144dp"
+        android:layout_below="@+id/searchByEditText"
+        android:layout_alignRight="@+id/searchByEditText"
+        android:layout_alignEnd="@+id/searchByEditText"/>
+
+    <TextView
+        android:id="@+id/storeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchButton"
+        android:text="StoreName.."/>
+
+    <TextView
+        android:id="@+id/storeLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storeNameTextView"
+        android:layout_marginTop="21dp"
+        android:text="Location.."/>
+
+    <TextView
+        android:id="@+id/storeSSNTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/storeLocationTextView"
+        android:layout_marginTop="22dp"
+        android:text="SSN.."/>
+
+    <TextView
+        android:id="@+id/storeNrOfTermTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="NrOfActiveTerms.."/>
+
+</RelativeLayout>
